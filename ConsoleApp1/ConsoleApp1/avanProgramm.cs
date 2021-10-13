@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -65,10 +65,22 @@ namespace ConsoleApp1
             Console.WriteLine("sisetaja operatsioon(+,/,*,-):");
             string op = Console.ReadLine();
             int Result = calculator(nr1, nr2, op);
-            Console.WriteLine("{0} {1} {2}={3}",nr1,op,nr2,Result);
+            Console.WriteLine("{0} {1} {2} = {3}",nr1,op,nr2,Result);
             for (int i = 0; i < Result; i++)
             {
                 Console.WriteLine("nur");
+            }
+            //ex3
+            int stars = 10;
+            for (int i = 0; i < stars; i++)
+            {
+                Console.WriteLine("*");
+            }
+            Console.WriteLine("Sisetaja stars num:");
+            int stars1=int.Parse(Console.ReadLine());
+            for (int i = 0; i < stars1; i++)
+            {
+                Console.WriteLine("*");
             }
             Console.ReadLine();
             
